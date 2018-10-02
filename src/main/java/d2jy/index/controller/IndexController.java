@@ -19,6 +19,6 @@ public class IndexController
 	@RequestMapping("/StudentMainPage")
 	public String studentMainPage()
 	{
-		return "mainpage/student/student_main";
+		return "mainpage/student/student_main_page";
 	}
 }

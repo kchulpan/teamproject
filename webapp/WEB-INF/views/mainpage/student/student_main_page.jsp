@@ -10,14 +10,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="" />
 	<!-- css -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" />
-	<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
-	<link href="css/jcarousel.css" rel="stylesheet" />
-	<link href="css/flexslider.css" rel="stylesheet" />
-	<link href="css/style.css" rel="stylesheet" />
+	<link href="css/mainpage/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/mainpage/fancybox/jquery.fancybox.css" rel="stylesheet">
+	<link href="css/mainpage/jcarousel.css" rel="stylesheet" />
+	<link href="css/mainpage/flexslider.css" rel="stylesheet" />
+	<link href="css/mainpage/style.css" rel="stylesheet" />
 
 	<!-- Theme skin -->
-	<link href="skins/default.css" rel="stylesheet" />
+	<link href="skins/mainpage/default.css" rel="stylesheet" />
 
 
 </head>
@@ -75,7 +75,7 @@
 							</li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
-									<img src="/img/face1.jpg" height="40" width="40" class="img-circle" alt="Avatar"/></a>
+									<img src="/img/mainpage/face1.jpg" height="40" width="40" class="img-circle" alt="Avatar"/></a>
 								<ul class="dropdown-menu">
 									<li><a href="#">개인정보수정</a></li>								
 									<li><a href="#">Settings</a></li>
@@ -97,7 +97,7 @@
 						<div id="main-slider" class="flexslider">
 							<ul class="slides">
 								<li>
-									<img src="img/slides/1.jpg" alt="" />
+									<img src="img/mainpage/slides/1.jpg" alt="" />
 									<div class="flex-caption">
 										<h3>행사1</h3>
 										<p>세부내용1</p>
@@ -105,7 +105,7 @@
 									</div>
 								</li>
 								<li>
-									<img src="img/slides/2.jpg" alt="" />
+									<img src="img/mainpage/slides/2.jpg" alt="" />
 									<div class="flex-caption">
 										<h3>행사2</h3>
 										<p>세부내용2</p>
@@ -331,17 +331,17 @@
 	<!-- javascript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="js/jquery.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.fancybox.pack.js"></script>
-	<script src="js/jquery.fancybox-media.js"></script>
-	<script src="js/google-code-prettify/prettify.js"></script>
-	<script src="js/portfolio/jquery.quicksand.js"></script>
-	<script src="js/portfolio/setting.js"></script>
-	<script src="js/jquery.flexslider.js"></script>
-	<script src="js/animate.js"></script>
-	<script src="js/custom.js"></script>
+	<script src="js/mainpage/jquery.js"></script>
+	<script src="js/mainpage/jquery.easing.1.3.js"></script>
+	<script src="js/mainpage/bootstrap.min.js"></script>
+	<script src="js/mainpage/jquery.fancybox.pack.js"></script>
+	<script src="js/mainpage/jquery.fancybox-media.js"></script>
+	<script src="js/mainpage/google-code-prettify/prettify.js"></script>
+	<script src="js/mainpage/portfolio/jquery.quicksand.js"></script>
+	<script src="js/mainpage/portfolio/setting.js"></script>
+	<script src="js/mainpage/jquery.flexslider.js"></script>
+	<script src="js/mainpage/animate.js"></script>
+	<script src="js/mainpage/custom.js"></script>
 
 </body>
 

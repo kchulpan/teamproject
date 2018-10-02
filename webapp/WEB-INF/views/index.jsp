@@ -95,7 +95,7 @@ body{padding:260px;}
 <body>
   
   <div id="wrap">
-  <p><img src="/img/school1.jpg"/></p>
+  <p><img src="/img/mainpage/school4.jpg"/></p>
   
   <div style="text-align:center">
   <caption><h2>로그인</h2></caption>
