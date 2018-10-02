@@ -37,7 +37,7 @@ body > * {font-family: 'Open Sans', Arial, sans-serif;}
 	
 	/* nav */
 	.nav {float:left; /* border:1px solid black; */ width:200px; height:100%; box-sizing:border-box;
-		  background-color:#2B333E; z-index:2;
+		  background-color:#2B333E; z-index:2; box-shadow: 3px 0px 5px 0px #888888;
 		  position:absolute; position:fixed; left:0px; transition:all 0.1s ease;}
 	.nav_active {left:-190px;} 
 	
@@ -72,10 +72,9 @@ body > * {font-family: 'Open Sans', Arial, sans-serif;}
 	
 		
 	/* article */
-	article {float:right; border:1px solid black; flex-grow:1; height:984px; box-sizing:border-box;
+	article {float:right; flex-grow:1; height:984px; box-sizing:border-box; background-color:#f5f5fa;
 			 position:relative; margin-left:217px; transition:all 0.25s ease;
-			 width:80%; z-index:1; background-color:#f5f5fa;
-			 display:flex; flex-direction:column;}
+			 width:80%; z-index:1; display:flex; flex-direction:column;}
 	.article_active {margin-left:30px;}
 	/* @media (max-width: 800px) {
 	  article {
@@ -103,7 +102,7 @@ body > * {font-family: 'Open Sans', Arial, sans-serif;}
 				position: relative; top: 2px;}	
 		.icon:hover {opacity: 1;}	
 				
-		.sections {position:relative; border:1px solid red; z-index:1; 
-					height:941px; background-color: white; overflow:scroll; padding:10px;}	
+		.sections {position:relative; z-index:1; 
+				   height:941px; background-color: white; overflow:scroll; padding:10px;}	
 		.sections > section {width:100%; height:100%;}
 								
