@@ -6,11 +6,11 @@
   <mapper namespace="User">
   	<!-- 결과담을 Map 작성 -->
   	
-  	<select id="Login" parameterType="hashMap" 
-  		resultType="com.spring.user.vo.UserVo">
+  <!-- 	<select id="Login" parameterType="hashMap" 
+  		resultType="">
   		SELECT USERID, USERPASS, USERNAME
   		FROM   USERS_TBL
   		WHERE  USERID = #{userid}
   		AND    USERPASS = #{userpass}
-  	</select>
+  	</select> -->
   </mapper>

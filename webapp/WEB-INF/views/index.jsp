@@ -7,12 +7,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <style>
-body{
-
-  padding:260px;
-  
-
-}
+body{padding:260px;}
   
 
  .font{
@@ -100,7 +95,7 @@ body{
 <body>
   
   <div id="wrap">
-  <p><img src="./photo/school.png"/></p>
+  <p><img src="/img/school1.jpg"/></p>
   
   <div style="text-align:center">
   <caption><h2>로그인</h2></caption>

@@ -5,7 +5,7 @@
     <!-- MENU_ID, MENU_NAME, MENU_SEQ -->
   <mapper namespace="Menu">
   	<!-- 결과담을 Map 작성 -->
-   	<resultMap id="MenuListMap" type="com.spring.menu.vo.MenuVo">
+<!--    	<resultMap id="MenuListMap" type="">
   		<result property="menu_id"	 column="MENU_ID" 	javaType="string"/>
 		<result property="menu_name" column="MENU_NAME" javaType="string"/>
   		<result property="menu_seq"	 column="MENU_SEQ" 	javaType="int"/>
@@ -20,7 +20,7 @@
   	
   	<select id="MenuList"
   			statementType="CALLABLE"
-  			parameterType="com.spring.menu.vo.MenuVo">
+  			parameterType="">
 		{CALL PKG_MENU.PROC_MENU_LIST(
 		#{result,  mode=OUT, jdbcType=CURSOR, javaType=ResultSet, resultMap=MenuListMap}
 		)}
@@ -40,7 +40,7 @@
   			{CALL PKG_MENU.PROC_MENU_DELETE(
   			#{menu_id, mode=IN, jdbcType=VARCHAR}
   			)}
-  	</delete>
+  	</delete> -->
 <!--  	<select id="GetContent"
 			statementType="CALLABLE"
 			parameterType="com.spring.menu.vo.MenuVo">

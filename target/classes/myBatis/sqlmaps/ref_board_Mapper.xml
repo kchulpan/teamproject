@@ -5,7 +5,7 @@
     
   <mapper namespace="Board">
   	<!-- 결과담을 Map 작성 -->
-  	<resultMap id="BoardListMap" type="com.spring.board.vo.BoardVo">
+  <!-- 	<resultMap id="BoardListMap" type="">
   		<result property="idx"		 column="IDX" 		javaType="int"/>
   		<result property="menu_id"	 column="MENU_ID" 	javaType="string"/>
   		<result property="title"	 column="TITLE" 	javaType="string"/>
@@ -22,7 +22,7 @@
   
    	<insert id="BoardInsert"
   			statementType="CALLABLE"
-  			parameterType="com.spring.board.vo.BoardVo">
+  			parameterType="">
 		{CALL PKG_BOARD.PROC_BOARD_INSERT(
 		#{menu_id, mode=IN, jdbcType=VARCHAR},
 		#{title,   mode=IN, jdbcType=VARCHAR},
@@ -37,7 +37,7 @@
   	
   	<select id="BoardList"
   			statementType="CALLABLE"
-  			parameterType="com.spring.board.vo.BoardVo">
+  			parameterType="">
 		{CALL PKG_BOARD.PROC_BOARD_LIST(
 		#{menu_id, mode=IN,  jdbcType=VARCHAR},
 		#{result,  mode=OUT, jdbcType=CURSOR, javaType=ResultSet, resultMap=BoardListMap}
@@ -46,7 +46,7 @@
   	
   	<select id="BoardContent"
   			statementType="CALLABLE"
-  			parameterType="com.spring.board.vo.BoardVo">
+  			parameterType="">
 		{CALL PKG_BOARD.PROC_BOARD_CONTENT(
 		#{idx, mode=IN,  jdbcType=INTEGER},
 		#{result,  mode=OUT, jdbcType=CURSOR, javaType=ResultSet, resultMap=BoardListMap}
@@ -55,9 +55,9 @@
   	
   	<delete id="BoardDelete"
   			statementType="CALLABLE"
-  			parameterType="com.spring.board.vo.BoardVo">
-  			<!-- parameterType 은 전달받는 값의 Type임 -->
-  			<!-- 전달받는 값이 없을때는 쓸 필요없음 -->
+  			parameterType="">
+  			parameterType 은 전달받는 값의 Type임
+  			전달받는 값이 없을때는 쓸 필요없음
 		{CALL PKG_BOARD.PROC_BOARD_DELETE(
 		#{idx, mode=IN,  jdbcType=INTEGER}
 		)}
@@ -69,5 +69,5 @@
 		#{title, mode=IN,  jdbcType=VARCHAR},
 		#{cont, mode=IN,  jdbcType=VARCHAR}
 		)}
-  	</update>
+  	</update> -->
   </mapper>

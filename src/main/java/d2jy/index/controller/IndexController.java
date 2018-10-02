@@ -10,13 +10,15 @@ import d2jy.index.service.IndexService;
 @Controller
 public class IndexController
 {
-	@Autowired
-	private IndexService indexService;
-	
 	@RequestMapping("/")
-	public String logIn() 
+	public String logIn()
 	{
-		indexService.logIn();
+		return "index";
+	}
+	
+	@RequestMapping("/home")
+	public String home()
+	{
 		return "index";
 	}
 }
