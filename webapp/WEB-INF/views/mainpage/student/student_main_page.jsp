@@ -42,7 +42,7 @@
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">수강<b class=" icon-angle-down"></b></a>
 								<ul class="dropdown-menu">
-									<li><a href="#">수강신청</a></li>
+									<li><a href="/StudentSubPage">수강신청</a></li>
 									<li><a href="#">신청내역조회</a></li>
 									<li><a href="#">시간표</a></li>
 								</ul>
