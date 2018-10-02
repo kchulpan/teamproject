@@ -18,12 +18,12 @@
 	var top_menus = ["학적변동","수강","성적조회","증명발급"];
 	var top_menus_id = ["menu1","menu2","menu3","menu4"];
 	var side_menus = [];
-	/* var sub_menus = ["졸업증명서", "성적증명서", "재학증명서"]; */
+	
 	side_menus [0] = ["학적조회", "휴학/복학", "전과/복수전공"];
 	side_menus [1] = ["수강신청", "신청내역 조회", "시간표 조회"];
 	side_menus [2] = ["전체 성적 조회", "금학기 성적 조회","강의평가"];
 	side_menus [3] = ["졸업증명서", "성적증명서", "재학증명서"];
-	/* side_menus [4] = ["증명서 발급"]; */
+	
 	
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------
@@ -105,7 +105,7 @@ function create_tab(menu_id, menu_html){
 	});
 	var label_tab = $('<label></label>').attr('for',tab_id).css('order',1).html(menu_html);
 	var img_tab = $('<img />').attr({
-		src:"/img/icon_x_grey.png", class:"icon"
+		src:"/img/subpage/icon_x_grey.png", class:"icon"
 	});
 	
 	label_tab.append(img_tab);
@@ -213,7 +213,7 @@ $(document).ready(function(){
   <header>
     <div id="title"><a href="/"><img src="/img/pknu_logo.png" id="pknu_logo"/></a></div>
     <div id="myPage">
-       <img src="/img/profile_photo.jpg" id="profile_photo" />
+       <img src="/img/subpage/profile_photo.jpg" id="profile_photo" />
        <span>ㅇㅇㅇ님</span>
        <i class="fa fa-angle-down down_arrow" style="font-size:24px;"></i>
        <!-- <img src="/img/icon_down_arrow .png" id="down_arrow"/> -->
