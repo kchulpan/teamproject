@@ -8,11 +8,10 @@
 <title>Home</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<link rel="stylesheet" href="/css/subpage/subMain.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-	
-</style>
+<!-- css -->
+	<link rel="stylesheet" href="/css/subpage/subMain.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <script>
 
 	var top_menus = ["학적변동","수강","성적조회","증명발급"];
@@ -211,7 +210,7 @@ $(document).ready(function(){
 <div id="wrapper">
 <!-- header -->
   <header>
-    <div id="title"><a href="/"><img src="/img/pknu_logo.png" id="pknu_logo"/></a></div>
+    <div id="title"><a class="title_logo" href="#"><span>D</span>djy</a></div>
     <div id="myPage">
        <img src="/img/subpage/profile_photo.jpg" id="profile_photo" />
        <span>ㅇㅇㅇ님</span>
