@@ -16,9 +16,9 @@ public class IndexController
 		return "index";
 	}
 	
-	@RequestMapping("/home")
-	public String home()
+	@RequestMapping("/StudentMainPage")
+	public String studentMainPage()
 	{
-		return "index";
+		return "mainpage/student/student_main";
 	}
 }

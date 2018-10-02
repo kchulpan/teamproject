@@ -100,21 +100,23 @@ body{padding:260px;}
   <div style="text-align:center">
   <caption><h2>로그인</h2></caption>
   </div>
-  
+  <form action="/StudentMainPage" method="POST">
   <div class="font">
-   <input type="text" class="userid" id="userid" placeholder="아이디 입력"  />  
+   <input type="text" class="userid" id="userid" name="userid" placeholder="아이디 입력"  />  
   </div>
   
   <div class="font">
-	<input type="password" class="password" placeholder="비밀번호 입력" />
+	<input type="password" class="password" name="passwork" placeholder="비밀번호 입력" />
   </div>
-  
+
+
   <button class="login" >로그인</button>
+  </form>
   </br>
   <div class="register">
    <div class="font2">아이디 저장<input type="checkbox"></input></div>
-  <div class="font2">아이디찾기/</div>
-  <div class="font2">비밀번호 찾기</div>
+  <div class="font2"><a href="">아이디찾기</a>/</div>
+  <div class="font2"><a href="">비밀번호 찾기</a></div>
   
  
   </div>
