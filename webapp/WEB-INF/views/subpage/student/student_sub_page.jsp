@@ -37,9 +37,10 @@
   </header>
   
   <div id="main_templet">
+  <div id="slide_btn"></div>
 <!-- side_menu -->
   <nav class="nav">
-  	<div id="slide_btn"></div>
+  	
 <!-- top_menu -->
     <div id="top_menu_box">
   	   <div id="menu1" class="top_menu">
@@ -75,7 +76,7 @@
     	
     <div class="sections">
     	<!-- 상세 페이지~~ -->	
-    	sadkfj
+    	
     	<br/>
     	dsf
     	<br/>
@@ -161,16 +162,16 @@
     	dsf<br/>
     	dsf<br/>
     	dsf<br/>
-    	dsf<br/>
-    	dsf<br/>
-    	dsf<br/>
-    	dsf<br/>
-    	dsf<br/>
-    	dsf<br/>
-    	dsf<br/>
-    	dsf<br/>
-    	dsf<br/>
-    	dsf
+    	마지막줄<br/>
+    	마지막줄<br/>
+    	마지막줄<br/>
+    	마지막줄<br/>
+    	마지막줄<br/>
+    	마지막줄<br/>
+    	마지막줄<br/>
+    	마지막줄-2<br/>
+    	마지막줄-1<br/>
+    	마지막줄
     	
     </div>
       
