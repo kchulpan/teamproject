@@ -40,11 +40,12 @@ function create_side_menu(idx, menu_id, side_menus_name){
 	}
 		
 	/* side_menu 클릭 이벤트 */
-	$('.side_menu').on('click',function(){
-		if($(this).has('#menu1_1')) {
+	$('.side_menu').on('click',function(e){
+		console.log(e.target.id);
+		if(e.target.id === 'menu1_1') {
 			$.ajax({
 				url: '/slist',
-				dataType: 'text',
+				dataType: 'html',
 				success: function(data) {
 
 					console.log(data);
