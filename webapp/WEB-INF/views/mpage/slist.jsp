@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" type="text/css" href="css/slist.css"/>
+<link rel="stylesheet" type="text/css" href="css/mpage/slist.css"/>
 </head>
 <body>
 	<div style="margin-top:30px;">
@@ -17,7 +17,7 @@
 				<td><input type="text" class="Unum_input" /></td>
 			</tr>
 		</table>
-				 <img  class="img" src="img/noname01.png"/>
+				 <img  class="img" src="img/mpage/noname01.png"/>
 		</div>
 		<table>
 			<h3>◈ 학적사항</h3>

@@ -21,6 +21,7 @@ function create_side_menu(idx, menu_id, side_menus_name){
 					.attr('id', menu_id +'_'+ (i+1));
 		$('#'+menu_id+'_box').append(side_menu);
 		
+		
 		/* sub_menu(소메뉴) 만들기 */
 		/* if(menu_id=='menu5'){				//소메뉴가 있는 조건
 		
@@ -40,6 +41,19 @@ function create_side_menu(idx, menu_id, side_menus_name){
 		
 	/* side_menu 클릭 이벤트 */
 	$('.side_menu').on('click',function(){
+		if($(this).has('#menu1_1')) {
+			$.ajax({
+				url: '/slist',
+				dataType: 'text',
+				success: function(data) {
+
+					console.log(data);
+					$('.sections').html(data);
+				}
+			});
+		}
+		
+		
 		
 		var id = $(this).attr('id');							/* id="menu1_1" */	
 		var html = $(this).html();
