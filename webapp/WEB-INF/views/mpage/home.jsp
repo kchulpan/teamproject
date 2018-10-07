@@ -12,5 +12,11 @@
 	<p><a href="/PList">교원정보</a></p>
 	<p><a href="/Absence">휴복학페이지</a></p>
 	<p><a href="/CMajor">전과/복수전공신청</a></p>
+	<p><a href="/Register">수강신청페이지</a></p>
+	<p><a href="/RegList">신청내역조회</a></p>
+	<p><a href="/RegList2">신청내역조회2</a></p>
+	<p><a href="/TimeTable">시간표조회</a></p>
+	<p><a href="/PTimeTable">강의시간표조회</a></p>
+	<p><a href="/ACCalendar">학사일정조회</a></p>
 </body>
 </html>
