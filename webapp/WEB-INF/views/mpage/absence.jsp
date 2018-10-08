@@ -23,14 +23,12 @@
 				<td><input type="text" /></td>
 				<td><div class="div1">학번</div></td>
 				<td><input type="text" /></td>
-			</tr>
-			<tr>
 				<td><div class="div1">학과전공</div></td>
 				<td><input type="text" /></td>
-				<td><div class="div1">수업학년도</div></td>
-				<td><input type="text" /></td>
 			</tr>
 			<tr>
+				<td><div class="div1">수업학년도</div></td>
+				<td><input type="text" /></td>
 				<td><div class="div1">수업학년</div></td>
 				<td><input type="text" /></td>
 				<td><div class="div1">수업학기</div></td>
