@@ -5,7 +5,7 @@
 	
 	side_menus [0] = ["학적조회", "휴학/복학", "전과/복수전공"];
 	side_menus [1] = ["수강신청", "신청내역 조회", "시간표 조회"];
-	side_menus [2] = ["전체 성적 조회", "금학기 성적 조회","강의평가"];
+	side_menus [2] = ["금학기 성적 확인", "전체 성적 조회", "누계 성적 조회"];
 	side_menus [3] = ["졸업증명서", "성적증명서", "재학증명서"];
 	
 	
@@ -16,11 +16,14 @@ function create_side_menu(idx, menu_id, side_menus_name){
 	//side menu 만들기
 	for (var i = 0; i < side_menus_name.length; i++) {
 		var side_menu = $('<div></div>')
-					.html(side_menus_name[i])
+					
 					.addClass('side_menu')
 					.attr('id', menu_id +'_'+ (i+1));
-		$('#'+menu_id+'_box').append(side_menu);
 		
+		var side_menu_A = $('<a></a>').attr('href','/'+ menu_id +'_'+ (i+1)).html(side_menus_name[i]);
+		
+		$(side_menu).append(side_menu_A);
+		$('#'+menu_id+'_box').append(side_menu);
 		
 		/* sub_menu(소메뉴) 만들기 */
 		/* if(menu_id=='menu5'){				//소메뉴가 있는 조건
@@ -40,21 +43,7 @@ function create_side_menu(idx, menu_id, side_menus_name){
 	}
 		
 	/* side_menu 클릭 이벤트 */
-	$('.side_menu').on('click',function(e){
-		console.log(e.target.id);
-		if(e.target.id === 'menu1_1') {
-			$.ajax({
-				url: '/slist',
-				dataType: 'html',
-				success: function(data) {
-
-					console.log(data);
-					$('.sections').html(data);
-				}
-			});
-		}
-		
-		
+	$('.side_menu').on('click',function(){
 		
 		var id = $(this).attr('id');							/* id="menu1_1" */	
 		var html = $(this).html();
@@ -100,8 +89,8 @@ function create_tab(menu_id, menu_html){
 	/* tab 생성 */
 
 	var input_tab = $('<input />').attr({
-		type:"radio", id :tab_id, name : "tabs" , checked : true
-	});
+		type:"radio", id :tab_id, name : "tabs", checked : true
+		}).addClass('tab');
 	var label_tab = $('<label></label>').attr('for',tab_id).css('order',1).html(menu_html);
 	var img_tab = $('<img />').attr({
 		src:"/img/subpage/icon_x_grey.png", class:"icon"
@@ -132,7 +121,9 @@ function create_tab(menu_id, menu_html){
 
 
 $(document).ready(function(){
-	
+	var article_height = $('article').css('height').split('px')[0];
+	  var section_height = article_height - 23;
+	  $('.sections').css('height',section_height + 'px');
 	//resize -> nav 나타났다가 사라졌다가,,
 	$( window ).resize(function() {
 		  if($(window).width() <=800){ 
@@ -144,6 +135,11 @@ $(document).ready(function(){
 			  $('nav').removeClass("nav_active");
 			  $('article').removeClass('article_active');
 		  } 
+		  
+		  var article_height = $('article').css('height').split('px')[0];
+		  var section_height = article_height - 23;
+		  $('.sections').css('height',section_height + 'px');
+		 
 	});
 	
 	//nav 만들기

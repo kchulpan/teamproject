@@ -5,16 +5,18 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Home</title>
+<title>DDJY University</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<!-- css -->
-	<link rel="stylesheet" href="/css/subpage/subMain.css" />
+	<link rel="stylesheet" href="/css/subpage/subpage.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 	<!-- js -->
 	<script src="js/subpage/subpage.js"></script>
 <script>
+
+
 
 </script>
 </head>
@@ -56,7 +58,7 @@
   	   <div id="menu2_box" class="side_menu_box"></div>
   	   <div id="menu3" class="top_menu">
   	   		<i class="fa fa-line-chart menu_icon"></i>
-  	  		성적조회 
+  	  		성적 
   	   </div>
   	   <div id="menu3_box" class="side_menu_box"></div>
   	   <div id="menu4" class="top_menu">
@@ -76,8 +78,6 @@
     	
     <div class="sections">
     	<!-- 상세 페이지~~ -->	
-    	
-    	<br/>
     	dsf
     	<br/>
     	dsf
@@ -181,11 +181,18 @@
   
 </div>
 <script>
-	$(function(){
+	/* $(function(){
 		$('.icon').each(function(index,item){
 			console.log($(this).parent().length());
 		});
-	});
+	}); */
+	
+	 $(function(){
+		$('body').on('click','a',function(e){
+			//alert('plus clicked');
+			 e.preventDefault(); + e.stopPropagation();
+		});
+	}); 
 </script>
 </body>
 
