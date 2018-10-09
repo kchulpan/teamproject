@@ -1,18 +1,19 @@
 
-	var top_menus = ["학적변동","수강","성적조회","증명발급"];
-	var top_menus_id = ["menu1","menu2","menu3","menu4"];
+	
 	var side_menus = [];
 	
-	side_menus [0] = ["학적조회", "휴학/복학", "전과/복수전공"];
-	side_menus [1] = ["수강신청", "신청내역 조회", "시간표 조회"];
-	side_menus [2] = ["금학기 성적 확인", "전체 성적 조회", "누계 성적 조회"];
-	side_menus [3] = ["졸업증명서", "성적증명서", "재학증명서"];
+	side_menus [0] = ["등록/조회"];
+	side_menus [1] = ["과목별 조회", "출결 관리"];
+	side_menus [2] = ["전체 조회", "입력 조회"];
+	side_menus [3] = ["등록/조회"];
+	side_menus [4] = ["대학,학과,과목 개설"];
+	side_menus [5] = ["공통코드 관리","관리자계정 관리","권한 관리","서비스 관리","서비스권한 관리"
+						,"메뉴 관리","메뉴권한 관리"];
 	
 	
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------
 function create_side_menu(idx, menu_id, side_menus_name){
-	// menu_id = menu1
 	//side menu 만들기
 	for (var i = 0; i < side_menus_name.length; i++) {
 		var side_menu = $('<div></div>')
@@ -24,59 +25,25 @@ function create_side_menu(idx, menu_id, side_menus_name){
 		
 		$(side_menu).append(side_menu_A);
 		$('#'+menu_id+'_box').append(side_menu);
-		
-		/* sub_menu(소메뉴) 만들기 */
-		/* if(menu_id=='menu5'){				//소메뉴가 있는 조건
-		
-			var sub_menu_box = $('<div></div>').attr('id','menu5_1_box').addClass('sub_menu_box');
-				
-				for (var j = 0; j < sub_menus.length; j++) {
-					var sub_menu = $('<div></div>')
-								.html(sub_menus[j])
-								.addClass('sub_menu')
-								.attr('id',menu_id +'_' +(i+1) +'_'+ (j+1));
-					$(sub_menu_box).append(sub_menu);
-
-				}
-			$('#'+menu_id+'_box').append(sub_menu_box);
-		}  */
 	}
 		
 	/* side_menu 클릭 이벤트 */
 	$('.side_menu').on('click',function(){
 		
 		var id = $(this).attr('id');							/* id="menu1_1" */	
-		var html = $(this).html();
+		var html = $(this).html();                        		/*<a href="/menu1_1">학적조회</a>*/
 		
-		/* 소메뉴가 있을 때 */
-		/* if(id=='menu5_1'){					//소메뉴가 있는 조건
-			
-			var box_id = $(this).attr('id') + '_box';
-
-			if($('#' + box_id).hasClass('sub_menu_box_active')){
-				$('#' + box_id).removeClass('sub_menu_box_active')
-			}else{
-				$('#' + box_id).addClass('sub_menu_box_active')
-			} 
-			
-			$('.sub_menu').on('click',function(){
-				create_tab($(this).attr('id'), $(this).html());
-			});	
-			
-		}else{ */
-			create_tab(id, html);	
-		/* } */
+		create_tab(id, html);	
 	});
 }
 	
 function create_tab(menu_id, menu_html){
 	/* tab 중복 막기 */
 	var tab_id = 'tab_' + menu_id;
-	//alert(tab_id);
 	
 	if(document.getElementById(tab_id)){
-		
-		$('#'+tab_id).prop('checked',true);	/* tab이미 있을 때, 그 탭 다시 체크 */
+
+		$('#'+tab_id).prop('checked',true);						/* tab이미 있을 때, 그 탭 다시 체크 */
 		$('[for =' + tab_id + ']').css('order',1);
 		
 		$('.tabs > label').not('[for =' + tab_id + ']').each(function (index, item) {
@@ -131,7 +98,6 @@ $(document).ready(function(){
 			  $('article').addClass('article_active');
 		  }
 		  if($(window).width() > 800){
-			  //if($('nav').hasClass('nav_active')) return;
 			  $('nav').removeClass("nav_active");
 			  $('article').removeClass('article_active');
 		  } 
@@ -143,7 +109,24 @@ $(document).ready(function(){
 	});
 	
 	//nav 만들기
-	//top_menu 클릭하면
+	
+	//top_menu 생성
+	var top_menus = ["인적 관리","수강 관리","성적 관리","게시판 관리","대학 관리","시스템 관리"];
+	var top_menus_id = ["adm_menu_personal","adm_menu_lecture","adm_menu_exam","adm_menu_board"
+						,"adm_menu_college","adm_menu_system"];
+	var top_menus_icon = ["fa fa-user-o menu_icon","fa fa-table menu_icon","fa fa-line-chart menu_icon"
+		,"fa fa-table menu_icon","fa fa-table menu_icon","fa fa-table menu_icon"];
+	
+	for (var i = 0; i < top_menus.length; i++) {
+		var top_menu = $('<div></div>').attr('id',top_menus_id[i]).addClass('top_menu');
+		var top_menu_html = '<i class="' + top_menus_icon[i] + '"></i>' + top_menus[i];
+		top_menu.html(top_menu_html);
+		var top_menu_box = $('<div></div>').attr('id',top_menus_id[i] + '_box').addClass('side_menu_box');
+		$('#top_menu_box').append(top_menu);
+		$('#top_menu_box').append(top_menu_box);
+	}
+	
+	//top_menu 클릭
 	$('#top_menu_box > div:even').on('click',function(){
 		
 		var box_id = $(this).attr('id') + '_box';
@@ -169,8 +152,8 @@ $(document).ready(function(){
 				}
 			}
 		}
-		
 	});
+	
 	
 	/* 내정보 클릭 -> 하위메뉴 정보변경/로그아웃 보여줌 */
 	$('#myPage').on('click',function(){
@@ -192,15 +175,6 @@ $(document).ready(function(){
 			$('nav').addClass('nav_active');
 			$('article').addClass('article_active');
 		}
-		/* if($('.nav').css('left') == '-190px'){
-			$('.nav').eq(0).css('left','0px');
-			$('article').css('margin-left','217px');
-			
-		} else{
-			$('.nav').eq(0).css('left','-190px');
-			$('article').css('margin-left','30px');
-		} */
 	});
-	
 	
 });

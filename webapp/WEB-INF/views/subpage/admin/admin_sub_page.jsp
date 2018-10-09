@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 	<!-- js -->
-	<script src="js/subpage/stu_subpage.js"></script>
+	<script src="js/subpage/adm_subpage.js"></script>
 <script>
 
 
@@ -25,7 +25,7 @@
 <div id="wrapper">
 <!-- header -->
   <header>
-  	<%@ include file="stu_common_layout/stu_header.jspf" %>
+  	<%@ include file="adm_common_layout/adm_header.jspf" %>
   </header>
   
   <div id="main_templet">
@@ -33,7 +33,7 @@
   
 <!-- side_menu -->
   <nav class="nav">
-  	<%@ include file="stu_common_layout/stu_nav.jspf" %>
+  	<%@ include file="adm_common_layout/adm_nav.jspf" %>
   </nav>
 
 <!-- main -->

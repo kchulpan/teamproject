@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>DDJY University</title>
+<title>수강 신청/조회/시간표</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<!-- css -->
@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 	<!-- js -->
-	<script src="js/subpage/stu_subpage.js"></script>
+	<script src="js/subpage/pro_subpage.js"></script>
 <script>
 
 
@@ -25,15 +25,14 @@
 <div id="wrapper">
 <!-- header -->
   <header>
-  	<%@ include file="stu_common_layout/stu_header.jspf" %>
+    <%@ include file="pro_common_layout/pro_header.jspf" %>
   </header>
   
   <div id="main_templet">
   <div id="slide_btn"></div>
-  
 <!-- side_menu -->
   <nav class="nav">
-  	<%@ include file="stu_common_layout/stu_nav.jspf" %>
+  	<%@ include file="pro_common_layout/pro_nav.jspf" %>
   </nav>
 
 <!-- main -->
@@ -42,6 +41,9 @@
     </div>
     	
     <div class="sections">
+    <!-- 상세 페이지 시작~~ -->	
+    내강의조회
+    <!-- 상세 페이지 끝~~   -->
     </div>
       
   </article>
@@ -50,12 +52,6 @@
   
 </div>
 <script>
-	/*  $(function(){
-		$('nav').on('click','a',function(e){
-			//alert('plus clicked');
-			 e.preventDefault(); + e.stopPropagation();
-		});
-	}); */ 
 </script>
 </body>
 
