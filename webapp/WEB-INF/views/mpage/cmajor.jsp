@@ -5,7 +5,34 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <link rel="stylesheet" href="/css/cmajor.css"/>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker1" ).datepicker({
+    	 changeMonth: true, 
+         dayNames: ['월요일', '화요일', '수요일', '목요일', '금요일', '토요일', '일요일'],
+         dayNamesMin: ['월', '화', '수', '목', '금', '토', '일'], 
+         monthNamesShort: ['1','2','3','4','5','6','7','8','9','10','11','12'],
+         monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+    		dateFormat:"yy-mm-dd"
+    });
+    
+  } );
+  $( function() {
+    $( "#datepicker2" ).datepicker({
+    	 changeMonth: true, 
+         dayNames: ['월요일', '화요일', '수요일', '목요일', '금요일', '토요일', '일요일'],
+         dayNamesMin: ['월', '화', '수', '목', '금', '토', '일'], 
+         monthNamesShort: ['1','2','3','4','5','6','7','8','9','10','11','12'],
+         monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+    		dateFormat:"yy-mm-dd"
+    });
+    
+  } );
+  </script>
 </head>
 <body>
 <div>
@@ -32,9 +59,12 @@
 				<td><div class="div1">신청학년도</div></td>
 				<td><input type="text" /></td>
 				<td><div class="div1">신청학기</div></td>
-				<td><input type="text" /></td>
+					<td><select class="div1">
+						   <option value="1">1학기</option>
+						   <option value="2">2학기</option>			   
+				   </select></td>
 				<td><div class="div1">신청일자</div></td>
-				<td><input type="text" /></td>
+				<td><p><input type="text" id="datepicker1"></p></td>
 				<td><div class="div1">전공구분</div></td>
 				<td>
 					<select> 
@@ -95,11 +125,19 @@
 				<td><div class="div1">전과학년도</div></td>
 				<td><input type="text" /></td>
 				<td><div class="div1">전과학기</div></td>
-				<td><input type="text" /></td>
+					<td><select class="div1">
+						   <option value="1">1학기</option>
+						   <option value="2">2학기</option>			   
+				   </select></td>
 				<td><div class="div1">신청전공</div></td>
-				<td><input type="text" /></td>
+				<td><select class="div1">
+						<option value="선택">선택</option>
+						<option value="경영학전공">경영학전공</option>
+						<option value="회계학전공">회계학전공</option>
+						<option value="무역학전공">무역학전공</option>
+				</select></td>
 				<td><div class="div1">신청일자</div></td>
-				<td><input type="text" /></td>
+				<td><p><input type="text" id="datepicker2"></p></td>
 			</tr>
 	</table>
 </div>
@@ -107,12 +145,57 @@
 	<table class="long">
 		<h4>전과신청이력</h4>
 		<tr>
-		<td ><div>번호</div></td>
+		<td  class="no1"><div>번호</div></td>
 		<td ><div>학년도</div></td>
 		<td ><div>학기</div></td>
 		<td ><div>신청전공</div></td>
 		<td ><div>신청일자</div></td>
 		<td ><div>처리상태</div></td>
+		</tr>
+		<tr>
+		<td  class="no1"><div>1</div></td>
+		<td ><div></div></td>
+		<td ><div></div></td>
+		<td ><div></div></td>
+		<td ><div></div></td>
+		<td ><div></div></td>
+		<td class="no1"><input type="button"  value="취소"></td>
+		</tr>
+		<tr>
+		<td class="no1"><div></div></td>
+		<td ><div></div></td>
+		<td ><div></div></td>
+		<td ><div></div></td>
+		<td ><div></div></td>
+		<td ><div></div></td>
+		<td class="no1"><input type="button"  value="취소"></td>
+		</tr>
+		<tr>
+		<td class="no1"><div ></div></td>
+		<td ><div></div></td>
+		<td ><div></div></td>
+		<td ><div></div></td>
+		<td ><div></div></td>
+		<td ><div></div></td>
+		<td class="no1"><input type="button"  value="취소"></td>
+		</tr>
+		<tr>
+		<td class="no1"><div ></div></td>
+		<td ><div></div></td>
+		<td ><div></div></td>
+		<td ><div></div></td>
+		<td ><div></div></td>
+		<td ><div></div></td>
+		<td class="no1"><input type="button"  value="취소"></td>
+		</tr>
+		<tr>
+		<td class="no1"><div ></div></td>
+		<td ><div></div></td>
+		<td ><div></div></td>
+		<td ><div></div></td>
+		<td ><div></div></td>
+		<td ><div></div></td>
+		<td class="no1"><input type="button"  value="취소"></td>
 		</tr>
 	</table>
 </div>		

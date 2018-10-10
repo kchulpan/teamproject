@@ -5,18 +5,23 @@
  	
  	  }
 .select{
-		width:500px;
+		width:400px;
 		margin: 0 auto;
 		text-align: center; 
 }
  .div1{
-	width:100px;
+	width:70px;
 	font-size:13px;
  	text-align: center; 
 } 
-.long{
-	width:1200px;
+.no1{
+	width:50px;
+	font-size:13px;
 	margin: 0 auto;
+	text-align: center;
+}
+.long{
+	width:1000px;
 	text-align: center;
 	
 }
