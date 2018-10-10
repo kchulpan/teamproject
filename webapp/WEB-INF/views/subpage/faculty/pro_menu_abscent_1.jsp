@@ -53,7 +53,7 @@
 				<td><input type="text" class="reg3"></td>
 				<td><div class="reg3">직급</div></td>
 				<td><input type="text" class="reg3"></td>
-				<td><div class="reg3">소속부서</div></td>
+				<td><div class="reg3">소속학과</div></td>
 				<td><input type="text" class="reg3"></td>
 				</tr>
 		</table>
@@ -63,8 +63,8 @@
 		<table class="long">
 			<div>
 				<tr>  
-				<td>
-				 	<select>
+				<td colspan="2">
+				 	<select class="reg1">
 					 <option value="과목">과목</option>
 					 <option value="경영원리">경영원리</option>
 					 <option value="재무관리">재무관리</option>
@@ -74,7 +74,7 @@
 				</td>
 				<td><input type="button" value="조회"></td>
 				<tr>
-					<td ><div class="no1">연번</div></td>
+					<td class="no1"><div class="no1">연번</div></td>
 					<td ><div class="reg3">학번</div></td>
 					<td ><div class="reg3">이름</div></td>
 					<td ><div class="reg3">대학</div></td>
@@ -89,7 +89,7 @@
 					<td ><div class="reg3"></div></td>
 				</tr>
 				<tr>
-					<td ><div class="reg3">1</div></td>
+					<td ><div class="no1">1</div></td>
 					<td ><div class="reg3">18300000</div></td>
 					<td ><div class="reg3">신학생</div></td>
 					<td ><div class="reg3">공과대학</div></td>
@@ -104,7 +104,7 @@
 					<td><input type="button" value="월별조회"></td>
 				</tr>
 				<tr>
-					<td ><div class="reg3">2</div></td>
+					<td ><div class="no1">2</div></td>
 					<td ><div class="reg3">18300001</div></td>
 					<td ><div class="reg3">박공부</div></td>
 					<td ><div class="reg3">상경대학</div></td>
@@ -119,22 +119,7 @@
 					<td><input type="button" value="월별조회"></td>
 				</tr>
 				<tr>
-					<td ><div class="reg3"></div></td>
-					<td ><div class="reg3"></div></td>
-					<td ><div class="reg3"></div></td>
-					<td ><div class="reg3"></div></td>
-					<td ><div class="reg3"></div></td>
-					<td ><div class="reg3"></div></td>
-					<td ><div class="reg3"></div></td>
-					<td ><div class="reg3"></div></td>
-					<td ><div class="reg3"></div></td>
-					<td ><div class="reg3"></div></td>
-					<td ><div class="reg3"></div></td>
-					<td ><div class="reg3"></div></td>
-					<td><input type="button" value="월별조회"></td>
-				</tr>
-				<tr>
-					<td ><div class="reg3"></div></td>
+					<td ><div class="no1"></div></td>
 					<td ><div class="reg3"></div></td>
 					<td ><div class="reg3"></div></td>
 					<td ><div class="reg3"></div></td>
@@ -149,7 +134,22 @@
 					<td><input type="button" value="월별조회"></td>
 				</tr>
 				<tr>
+					<td ><div class="no1"></div></td>
 					<td ><div class="reg3"></div></td>
+					<td ><div class="reg3"></div></td>
+					<td ><div class="reg3"></div></td>
+					<td ><div class="reg3"></div></td>
+					<td ><div class="reg3"></div></td>
+					<td ><div class="reg3"></div></td>
+					<td ><div class="reg3"></div></td>
+					<td ><div class="reg3"></div></td>
+					<td ><div class="reg3"></div></td>
+					<td ><div class="reg3"></div></td>
+					<td ><div class="reg3"></div></td>
+					<td><input type="button" value="월별조회"></td>
+				</tr>
+				<tr>
+					<td ><div class="no1"></div></td>
 					<td ><div class="reg3"></div></td>
 					<td ><div class="reg3"></div></td>
 					<td ><div class="reg3"></div></td>
@@ -164,7 +164,7 @@
 				<td><input type="button" value="월별조회"></td>
 				</tr>
 				<tr>
-					<td ><div class="reg3"></div></td>
+					<td ><div class="no1"></div></td>
 					<td ><div class="reg3"></div></td>
 					<td ><div class="reg3"></div></td>
 					<td ><div class="reg3"></div></td>
@@ -198,7 +198,7 @@
 				</tr>
 				<tr>
 					<td ><div class="reg3">1</div></td>
-					<td ><div class="reg3">○</div></td>
+					<td ><div class="reg3">O</div></td>
 					<td ><div class="reg3">16:00</div></td>
 					<td ><div class="reg3">18:30</div></td>
 					<td ><div class="reg3"></div></td>

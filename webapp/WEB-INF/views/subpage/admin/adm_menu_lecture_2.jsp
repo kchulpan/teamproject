@@ -63,27 +63,27 @@
 		<table class="long">
 			<div>
 				<tr>
-				<td >
-				 	<select>
+				<td class="reg3">
+				 	<select class="reg3">
 					 <option value="대학">대학</option>
 					 <option value="상경대학">상경대학</option>
 					 <option value="사회대학">사회대학</option>
 					 <option value="인문대학">인문대학</option>
 					 <option value="공과대학">공과대학</option>
 				   </select></td>
-				<td>
-				 	<select>
+				<td class="reg3">
+				 	<select  class="reg3">
 					 <option value="학과">학과</option>
 					 <option value="경영학과">경영학과</option>
 					 <option value="사회복지학과">사회복지학과</option>
 					 <option value="국문학과">국문학과</option>
 					 <option value="기계공학과">기계공학과</option>
 				   </select></td>
-				<td>
-					<input type="text" placeholder="이름/학번"/>
+				<td class="reg3">
+					<input type="text" class="reg3" placeholder="이름/학번"/>
 				</td>   
-				<td>
-				 	<select>
+				<td class="reg3">
+				 	<select  class="reg3">
 					 <option value="과목">과목</option>
 					 <option value="경영원리">경영원리</option>
 					 <option value="재무관리">재무관리</option>
@@ -93,22 +93,22 @@
 				</td>
 				<td><input type="button" value="조회"></td>
 				<tr>
-					<td ><div class="no1">연번</div></td>
-					<td ><div class="reg3">학번</div></td>
-					<td ><div class="reg3">이름</div></td>
-					<td ><div class="reg3">대학</div></td>
-					<td ><div class="reg3">학과</div></td>
-					<td ><div class="reg3">과목</div></td>
-					<td ><div class="reg3">학년</div></td>
-					<td ><div class="reg3">수업일수</div></td>
-					<td ><div class="reg3">출석일수</div></td>
-					<td ><div class="reg3">결석일수</div></td>
-					<td ><div class="reg3">출석률일(%)</div></td>
-					<td ><div class="reg3">출석률분(%)</div></td>
-					<td ><div class="reg3"></div></td>
+					<td class="no1"><div class="no1">연번</div></td>
+					<td class="reg3"><div class="reg3">학번</div></td>
+					<td class="reg3"><div class="reg3">이름</div></td>
+					<td class="reg3"><div class="reg3">대학</div></td>
+					<td class="reg3"><div class="reg3">학과</div></td>
+					<td class="reg3"><div class="reg3">과목</div></td>
+					<td class="reg3"><div class="reg3">학년</div></td>
+					<td class="reg3"><div class="reg3">수업일수</div></td>
+					<td class="reg3"><div class="reg3">출석일수</div></td>
+					<td class="reg3"><div class="reg3">결석일수</div></td>
+					<td class="reg3"><div class="reg3">출석률일(%)</div></td>
+					<td class="reg3"><div class="reg3">출석률분(%)</div></td>
+					<td class="reg3"><div class="reg3"></div></td>
 				</tr>
 				<tr>
-					<td ><div class="reg3">1</div></td>
+					<td class="no1"><div class="no1">1</div></td>
 					<td ><div class="reg3">18300000</div></td>
 					<td ><div class="reg3">신학생</div></td>
 					<td ><div class="reg3">공과대학</div></td>
@@ -123,7 +123,7 @@
 					<td><input type="button" value="월별조회"></td>
 				</tr>
 				<tr>
-					<td ><div class="reg3">2</div></td>
+					<td class="no1"><div class="no1">2</div></td>
 					<td ><div class="reg3">18300001</div></td>
 					<td ><div class="reg3">박공부</div></td>
 					<td ><div class="reg3">상경대학</div></td>
@@ -138,22 +138,7 @@
 					<td><input type="button" value="월별조회"></td>
 				</tr>
 				<tr>
-					<td ><div class="reg3"></div></td>
-					<td ><div class="reg3"></div></td>
-					<td ><div class="reg3"></div></td>
-					<td ><div class="reg3"></div></td>
-					<td ><div class="reg3"></div></td>
-					<td ><div class="reg3"></div></td>
-					<td ><div class="reg3"></div></td>
-					<td ><div class="reg3"></div></td>
-					<td ><div class="reg3"></div></td>
-					<td ><div class="reg3"></div></td>
-					<td ><div class="reg3"></div></td>
-					<td ><div class="reg3"></div></td>
-					<td><input type="button" value="월별조회"></td>
-				</tr>
-				<tr>
-					<td ><div class="reg3"></div></td>
+					<td class="no1"><div class="no1"></div></td>
 					<td ><div class="reg3"></div></td>
 					<td ><div class="reg3"></div></td>
 					<td ><div class="reg3"></div></td>
@@ -168,7 +153,22 @@
 					<td><input type="button" value="월별조회"></td>
 				</tr>
 				<tr>
+					<td class="no1"><div class="no1"></div></td>
 					<td ><div class="reg3"></div></td>
+					<td ><div class="reg3"></div></td>
+					<td ><div class="reg3"></div></td>
+					<td ><div class="reg3"></div></td>
+					<td ><div class="reg3"></div></td>
+					<td ><div class="reg3"></div></td>
+					<td ><div class="reg3"></div></td>
+					<td ><div class="reg3"></div></td>
+					<td ><div class="reg3"></div></td>
+					<td ><div class="reg3"></div></td>
+					<td ><div class="reg3"></div></td>
+					<td><input type="button" value="월별조회"></td>
+				</tr>
+				<tr>
+					<td class="no1"><div class="no1"></div></td>
 					<td ><div class="reg3"></div></td>
 					<td ><div class="reg3"></div></td>
 					<td ><div class="reg3"></div></td>
@@ -183,7 +183,7 @@
 				<td><input type="button" value="월별조회"></td>
 				</tr>
 				<tr>
-					<td ><div class="reg3"></div></td>
+					<td class="no1"><div class="no1"></div></td>
 					<td ><div class="reg3"></div></td>
 					<td ><div class="reg3"></div></td>
 					<td ><div class="reg3"></div></td>

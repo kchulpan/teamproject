@@ -48,14 +48,14 @@
 	<div class="chart1">
 		<table class="long">
 				<tr>
-				<td><div class="no1">교번</div></td>
-				<td><input type="text" class="reg3"></td>
-				<td><div class="reg3">이름</div></td>
-				<td><input type="text" class="reg3"></td>
-				<td><div class="reg3">직급</div></td>
-				<td><input type="text" class="reg3"></td>
-				<td><div class="reg3">소속학과</div></td>
-				<td><input type="text" class="reg3"></td>
+				<td class="no1"><div class="no1">교번</div></td>
+				<td class="no1"><input type="text" ></td>
+				<td class="reg3"><div class="reg3">이름</div></td>
+				<td class="reg3"><input type="text" ></td>
+				<td class="reg3"><div class="reg3">직급</div></td>
+				<td class="reg3"><input type="text" ></td>
+				<td class="reg3"><div class="reg3">소속학과</div></td>
+				<td class="reg3"><input type="text" ></td>
 				</tr>
 		</table>
 	</div>
