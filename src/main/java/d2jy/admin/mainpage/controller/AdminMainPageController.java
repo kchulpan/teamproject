@@ -20,4 +20,39 @@ public class AdminMainPageController {
 	public String professor_sub_page() {
 		return "subpage/faculty/professor_sub_page";
 	}
+	
+	
+	/*include*/
+	@RequestMapping("/SubPage")
+	public String subPage() {
+		return "include/sub_page";
+	}
+	
+	@RequestMapping("/Commoncode")
+	public String commoncode(String page_id) {
+		
+		return "include/commoncode";
+	}
+	
+	@RequestMapping("/Freeln")
+	public String freeln(String page_id) {
+		return "include/freeln";
+	}
+	
+	@RequestMapping("/Project")
+	public String project(String page_id) {
+		return "include/project";
+	}
+	
+	@RequestMapping("/Charge")
+	public String charge(String page_id) {
+		return "include/charge";
+	}
+	
+	@RequestMapping("/Client")
+	public String client(String page_id) {
+		return "include/client";
+	}
+	
+	
 }
