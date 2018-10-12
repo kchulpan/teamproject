@@ -107,7 +107,7 @@ $(document).ready(function(){
 	//nav 만들기
 	
 	//top_menu 생성
-	var top_menus = ["수강","성적","학적"];
+	/*var top_menus = ["수강","성적","학적"];
 	var top_menus_id = ["stu_menu_lecture","stu_menu_exam","stu_menu_info"];
 	var top_menus_icon = ["fa fa-table menu_icon","fa fa-line-chart menu_icon","fa fa-user-o menu_icon"];
 	
@@ -118,10 +118,10 @@ $(document).ready(function(){
 		var top_menu_box = $('<div></div>').attr('id',top_menus_id[i] + '_box').addClass('side_menu_box');
 		$('#top_menu_box').append(top_menu);
 		$('#top_menu_box').append(top_menu_box);
-	}
+	}*/
 	
 	//top_menu 클릭
-	$('#top_menu_box > div:even').on('click',function(){
+	/*$('#top_menu_box > div').on('click',function(){
 		
 		var box_id = $(this).attr('id') + '_box';
 		$('#' + box_id).empty();
@@ -146,7 +146,7 @@ $(document).ready(function(){
 				}
 			}
 		}
-	});
+	});*/
 	
 	
 	/* 내정보 클릭 -> 하위메뉴 정보변경/로그아웃 보여줌 */
