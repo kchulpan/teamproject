@@ -29,28 +29,28 @@ public class AdminMainPageController {
 	}
 	
 	@RequestMapping("/Commoncode")
-	public String commoncode(String page_id) {
+	public String commoncode() {
 		
 		return "include/commoncode";
 	}
 	
 	@RequestMapping("/Freeln")
-	public String freeln(String page_id) {
+	public String freeln() {
 		return "include/freeln";
 	}
 	
 	@RequestMapping("/Project")
-	public String project(String page_id) {
+	public String project() {
 		return "include/project";
 	}
 	
 	@RequestMapping("/Charge")
-	public String charge(String page_id) {
+	public String charge() {
 		return "include/charge";
 	}
 	
 	@RequestMapping("/Client")
-	public String client(String page_id) {
+	public String client() {
 		return "include/client";
 	}
 	
